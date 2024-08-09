@@ -1,4 +1,10 @@
-// Hi there! Your task is to implement the function getMixingTime. This function should take a drink name as an argument and return a string with the total mixing time for that drink. The total mixing time is the sum of the mixing times for all the ingredients in the drink. If an ingredient has no defined mixing time, the function should return a string saying so. If the drink is not in the drinkRecipes object, the function should return a string saying that it can't calculate the mixing time for that drink at this moment.
+// Hi there! Your task is to implement the function getMixingTime. 
+// This function should take a drink name as an argument and return a string with the total mixing time for that drink. The total mixing time is the sum of the mixing times for all the ingredients in the drink. 
+// If an ingredient has no defined mixing time, the function should return a string saying so. 
+// If the drink is not in the drinkRecipes object, the function should return a string saying that it can't calculate the mixing time for that drink at this moment.
+
+// Please make sure you run "npm install" first to get all required packages
+// To check if tests are working please run "npm run test"
 
 const drinkRecipes = {
     "Pina Colada": ["Pineapple Juice", "Coconut Cream", "Rum", "Ice", "Cherry"],
@@ -46,3 +52,4 @@ export { getMixingTime };
 getMixingTime('Mojito'); // Should return: "Total mixing time for Mojito will be 6 minutes."
 getMixingTime('Margarita'); // Should return: "Ingredient 'Salt' has no defined mixing time."
 getMixingTime('Zombie'); // Should return: "I can't calculate mixing time for 'Zombie' at this moment"
+ 
