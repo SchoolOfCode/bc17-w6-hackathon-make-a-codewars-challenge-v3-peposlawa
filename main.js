@@ -1,3 +1,5 @@
+// Hi there! Your task is to implement the function getMixingTime. This function should take a drink name as an argument and return a string with the total mixing time for that drink. The total mixing time is the sum of the mixing times for all the ingredients in the drink. If an ingredient has no defined mixing time, the function should return a string saying so. If the drink is not in the drinkRecipes object, the function should return a string saying that it can't calculate the mixing time for that drink at this moment.
+
 const drinkRecipes = {
     "Pina Colada": ["Pineapple Juice", "Coconut Cream", "Rum", "Ice", "Cherry"],
     "Mojito": ["Mint Leaves", "Lime Juice", "Rum", "Sugar", "Soda Water"],
@@ -32,24 +34,15 @@ const drinkRecipes = {
     "Passionfruit": 2,
   };
   
-  function getMixingTime(drink) {
-    const ingredients = drinkRecipes[drink];
-    if (!ingredients) {
-      return `I can't calculate mixing time for "Zombie" at this moment. Come back later.`;
-    }
-  
-    let totalMixingTime = 0;
-  
-    for (let i = 0; i < ingredients.length; i++) {
-      const ingredient = ingredients[i];
-      if (ingredientTimes[ingredient] !== undefined) {
-        totalMixingTime += ingredientTimes[ingredient];
-      } else {
-        return `Ingredient "${ingredient}" has no defined mixing time.`;
-      }
-    }
-  
-    return `Total mixing time for ${drink} will be ${totalMixingTime} minutes.`;
-  }
-  
-  export { getMixingTime };
+// Implement the function getMixingTime
+function getMixingTime(drink) {
+  // Your code here
+}
+
+// Do not remove or change this line, or the tests won't work
+export { getMixingTime };
+
+// Example usage of the function
+getMixingTime('Mojito'); // Should return: "Total mixing time for Mojito will be 6 minutes."
+getMixingTime('Margarita'); // Should return: "Ingredient 'Salt' has no defined mixing time."
+getMixingTime('Zombie'); // Should return: "I can't calculate mixing time for 'Zombie' at this moment"
